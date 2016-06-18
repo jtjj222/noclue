@@ -9,6 +9,7 @@ mkdir output
 
 cp -r ./images ./output/images
 cp -r ./stylesheets ./output/stylesheets
+cp -r ./js ./output/js
 
 # TODO - Run any code examples and generate their outputs
 
@@ -27,7 +28,7 @@ do
     pandoc --toc --toc-depth=1 --template toc_template.html $f \
         | tail -n +2 \
         | head -n -1 \
-        | sed -E 's/"#(.*)"/"'"$root"'.html#\1"/' >> output/toc.html
+        | sed -E 's/"#(.*)"/"'"$root"'.html"/' >> output/toc.html
 done
 
 printf "</ul>" >> output/toc.html
@@ -41,7 +42,7 @@ do
     # Get the name of this document, without chapters/ or .md
     root=`basename $f .md`
     # Output a standalone document, inserting toc
-    pandoc -s -S --template html_template.html -c stylesheets/html.css $f | perl -pe 's/\$toc\$/`cat output\/toc.html`/ge' > output/$root.html
+    pandoc -s -S --template html_template.html --no-highlight -c stylesheets/html.css $f | perl -pe 's/\$toc\$/`cat output\/toc.html`/ge' > output/$root.html
 done
 
 # Clean up

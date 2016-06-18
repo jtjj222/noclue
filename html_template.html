@@ -1,14 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+<!doctype html>
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Style-Type" content="text/css" />
     <meta name="generator" content="pandoc" />
     <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-    <style type="text/css">
-        code{white-space: pre;}
-        q { quotes: "“" "”" "‘" "’"; }
-    </style>
+    $if(quotes)$
+      <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+    $endif$
     $for(css)$
       <link rel="stylesheet" href="$css$" type="text/css" />
     $endfor$
@@ -18,15 +17,30 @@
     $for(header-includes)$
       $header-includes$
     $endfor$
+    <link rel="stylesheet" href="js/highlight/styles/default.css">
 </head>
 <body>
+    $for(include-before)$
+        $include-before$
+    $endfor$
+    <script src="js/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <!-- Header at the top of the page -->
+    <div id="header">
+        <h1><a href="http://github.justinmichaud.com/noclue/index.html">No Clue</a></h1>
+        <a href="#" class='right' onclick="var toc = document.getElementById('toc').style; if (toc.display=='block') toc.display = 'none'; else toc.display = 'block';">Table of Contents</a>
+    </div>
     <!-- Table of Contents produced by our make.sh script -->
     <div id="toc">
+        <h3>Table of Contents</h3>
         $$toc$$
     </div>
-    <!-- Body produced by pandoc -->
+    <!-- Body produced by pandoc. Avoid indentation so that code blocks don't have extra indents -->
     <div role="main">
-        $body$
+$body$
     </div>
+    $for(include-after)$
+        $include-after$
+    $endfor$
 </body>
 </html>
