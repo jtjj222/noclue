@@ -10,6 +10,7 @@ mkdir output
 cp -r ./images ./output/images
 cp -r ./stylesheets ./output/stylesheets
 cp -r ./js ./output/js
+cp -r ./examples ./output/examples
 
 # TODO - Run any code examples and generate their outputs
 

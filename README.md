@@ -71,7 +71,7 @@ Embeded Programming:
 - Unlock computer when you get near based on phone wifi signal strength (linux pam module)
 
 Reverse Engineering:
-- 
+- ?
 
 Graphics Programming:
 - Brief introduction to game engines
@@ -90,11 +90,11 @@ Debugging:
 - How to use a debugger, how to structure code so it is easy to reason about
 
 TDD:
-- 
+- ?
 
 Reading other people's code, contributing to Open Source:
-- 
+- ?
 
 Write a Compier:
-- 
+- ?
 
