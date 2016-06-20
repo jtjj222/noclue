@@ -37,30 +37,11 @@ Each example is designed to be self-contained, and relevant to many different pr
 
 These are ideas that I hope to someday include in the book. They are mostly notes for myself
 
-Get up to speed:
-- Basics of designing a program
-- Research skills
-- RPN Calculator in Java, then Racket
-
-Complexity and Computation:
-- Universal theory of computation
-- Big Oh
-- Complexity
-- Sorting & Binary Search
-- Challenge: Radix sort
-
 Programming languages:
 - Java
 - Racket
 - C (talk about pointers)
 - Example: Build program from above in all three languages, and compare
-
-Algorithms and Data Structures:
-- Stacks and Queues
-- Graphs
-- Example: Image shrinking using seam carving
-- Wordnet
-- Regex
 
 Embeded Programming:
 - Memory management, pointers, 

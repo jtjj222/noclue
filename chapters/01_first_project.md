@@ -36,7 +36,9 @@ A stack is a very common data structure in Computer Science. There are two commo
 
 TODO Image
 
-We will discuss data structures later on. For our RPN Calculator, we will use the built-in stack implementation for our language (`java.util.Stack` in Java) to avoid duplicated effort. This is generally a good idea when programming - be lazy.
+TODO discuss stacks, linked lists, arrays
+
+For our RPN Calculator, we will use the built-in stack implementation for our language (`java.util.Stack` in Java) to avoid duplicated effort. This is generally a good idea when programming - be lazy.
 
 ## How will we organize our program?
 
@@ -69,5 +71,5 @@ TODO
 
 ## What did we learn?
 
-Always remember that there is room for improvement. Until next time, happy coding!
+Always remember that there is room for improvement. Until next time, Happy Coding!
 
