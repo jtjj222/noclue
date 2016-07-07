@@ -42,6 +42,7 @@ Programming languages:
 - Racket
 - C (talk about pointers)
 - Example: Build program from above in all three languages, and compare
+- Functional data structures
 
 Embeded Programming:
 - Memory management, pointers, 
@@ -58,6 +59,13 @@ Graphics Programming:
 - Brief introduction to game engines
 - Small opengl shooter
 - Integrate with Razr open vr or smartphone
+- Mandelbrot fractal
+
+- Encryption
+
+- Notepad with QT
+
+- lambda calculus interpreter in racket
 
 Organization:
 - Logic gates
@@ -70,6 +78,9 @@ Writing clean code:
 Debugging:
 - How to use a debugger, how to structure code so it is easy to reason about
 
+Networking:
+- ?
+
 TDD:
 - ?
 
@@ -77,5 +88,8 @@ Reading other people's code, contributing to Open Source:
 - ?
 
 Write a Compier:
+- ?
+
+Version Control:
 - ?
 
