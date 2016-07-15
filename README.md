@@ -72,11 +72,17 @@ Organization:
 - Assembly
 - Example: Write a small assembly game (i.e breakout for nes or something)
 
+Commodore 64 game:
+- Hello world, pong, in assembler for commodore 64
+
 Writing clean code:
 - Examples of making an ugly program better
 
 Debugging:
 - How to use a debugger, how to structure code so it is easy to reason about
+
+Databases:
+- Different relationships, discuss how an SQL database is usually the best option even if nosql has a lot of hype
 
 Networking:
 - ?
@@ -86,6 +92,9 @@ TDD:
 
 Reading other people's code, contributing to Open Source:
 - ?
+
+Cobol:
+- Simple data processing app
 
 Write a Compier:
 - ?
