@@ -75,6 +75,9 @@ Organization:
 Commodore 64 game:
 - Hello world, pong, in assembler for commodore 64
 
+Mod nes game or something
+Businesscard raytracer
+
 Writing clean code:
 - Examples of making an ugly program better
 
